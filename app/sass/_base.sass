@@ -22,3 +22,41 @@ body
 
 .text-center
 	text-align: center
+
+.btn
+  cursor: pointer
+  display: inline-block
+  border: none
+  color: #fff
+  text-decoration: none
+  background-color: $btn-color
+  padding: 10px 60px
+  font-size: 20px
+  font-weight: 800
+  border-radius: 3px
+  text-align: center
+  position: relative
+  outline: none
+  transition: background-color .5s ease
+  &.btn-gray
+    background-color: $dark
+    &:hover
+      background-color: lighten($dark, 5%)
+      &::after
+        opacity: .22
+    &:active
+      background-color: darken($dark, 5%)
+      &::after
+        opacity: .32
+  &:focus, &:hover
+    text-decoration: none
+    color: #fff
+  &:hover
+    background-color: lighten($btn-color, 5%)
+    &::after
+      opacity: .22
+  &:active
+    background-color: darken($btn-color, 5%)
+    &::after
+      opacity: .32
+
