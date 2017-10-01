@@ -11,9 +11,30 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: raleway-example, sans-serif
+	font-family: raleway-grid, sans-serif
 	overflow-x: hidden
 	opacity: 1
+
+input
+  border: none
+  padding: 15px 20px
+  width: 100%
+  font-family: Arial, sans-serif
+  font-style: italic
+  outline: none
+
+.container
+  max-width: 1199px
+  margin: auto
+  padding: 0 $gutter
+
+.base-section
+  padding: 80px 0
+  h2
+    font-size: 34px
+    font-weight: 800
+    color: $dark
+    line-height: 1.2
 
 .img-responsive
 	display: block
@@ -59,4 +80,3 @@ body
     background-color: darken($btn-color, 5%)
     &::after
       opacity: .32
-
