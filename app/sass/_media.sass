@@ -20,6 +20,15 @@
       .btn
         font-size: 18px
 
+  /* Portfolio Media */
+
+  #portfolio
+    grid-template-columns: repeat(3, 1fr)
+    .portfolio-item
+      min-height: 40vh
+      font-size: 16px
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
@@ -30,6 +39,24 @@
       padding: 40px 20px
       h1
         font-size: 50px
+
+  #portfolio
+    grid-template-columns: 1fr
+    .portfolio-item
+      min-height: 50vh
+
+      &:nth-child(1)
+        grid-column: initial
+
+      &:nth-child(5)
+        grid-column: initial
+
+      &:nth-child(6)
+        grid-column: initial
+        grid-row: initial
+
+    .buttoncase
+      grid-column: 1 / 2
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
