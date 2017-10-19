@@ -4,13 +4,24 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
 
+  /* Blog Media Quaries */
+
+  #blog
+    .blog-home
+      grid-template-columns: repeat(3, 1fr)
+      .blog-item
+        &:nth-child(3)
+          grid-column: 2 / 3
+          grid-row: 1
+        &:nth-child(4)
+          grid-column: 1 / 2
+          grid-row: 2
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 
-  /* Header Media */
+  /* Header Media Quaries */
 
   #header
     .header-content
@@ -20,7 +31,7 @@
       .btn
         font-size: 18px
 
-  /* Portfolio Media */
+  /* Portfolio Media Quaries */
 
   #portfolio
     grid-template-columns: repeat(3, 1fr)
@@ -28,11 +39,23 @@
       min-height: 40vh
       font-size: 16px
 
+  /* Blog Media Quaries */
+
+  #blog
+    .blog-home
+      grid-template-columns: repeat(2, 1fr)
+      .blog-item
+        &:nth-child(3)
+          grid-column: 2
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
-  /* Header Media */
+  .base-section
+    padding: 40px 0
+
+  /* Header Media Quaries */
 
   #header
     .header-content
@@ -58,10 +81,57 @@
     .buttoncase
       grid-column: 1 / 2
 
+
+  /* About Media Quaries */
+
+  #about
+    .container
+      grid-template-columns: 1fr
+
+    .about-left
+      border-right: none
+      padding: 5%
+      h2
+        margin-bottom: 20px
+
+  /* Contact Form Media Quaries */
+
+  #contact-form
+    padding: 15px 0
+    form
+      grid-template-columns: 1fr 1fr
+
+  /* Blog Media Quaries */
+
+  #blog
+    .blog-home
+      grid-template-columns: 1fr
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
 
+  /* Header Media Quaries */
+
+  #header
+    .header-content
+      h1
+        font-size: 40px
+      .btn
+        font-size: 16px
+
+  /* Contact Form Media Quaries */
+
+  #contact-form
+    padding: 10px 0
+    form
+      grid-template-columns: 1fr
+
+  /* Footer Media Quaries */
+
+  #footer
+    padding: 30px 0
+    .footer-copy
+     margin-top: 10px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
